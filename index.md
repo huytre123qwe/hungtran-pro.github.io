@@ -1,5 +1,7 @@
-Here you can say lots of fun things about your site.
+[English]
 
-Maybe say a some things about yourself.
+Welcome to Basic Algorithm Blog distributed by ITClub PTIT HN.
 
-Or maybe what you plan to blog about.
+[Tiếng Việt]
+
+Chào mừng các bạn đến với blog Basic Algorithm được tài trợ bởi ITClub PTIT HN.
