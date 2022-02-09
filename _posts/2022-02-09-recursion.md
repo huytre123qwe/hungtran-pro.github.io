@@ -25,7 +25,7 @@
 			Dễ thấy **f(1) = 1** do đó ta quay tại tính **f(2)**, từ **f(2)** ta tính được **f(3)** rồi tính được **f(4)**.
       
 	- Code:
- ```c++
+ ```C++
  // Cách tiếp cận 1:
 int f(int n)
 {
