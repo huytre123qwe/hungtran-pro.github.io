@@ -5,12 +5,17 @@
  ## 1. Khái niệm:
  
 - Đệ quy là quá trình mà trong đó **một hàm gọi lại chính nó** theo một cách trực tiếp hoặc gián tiếp. Khi đó, hàm đó được gọi là **hàm đệ quy**.
+
 - Đệ quy thường được sử dụng trong những bài toán mà bài toán đó có thể được phân rã thành những bài toán nhỏ hơn nhưng có cùng dạng với bài toán ban đầu. Việc phân rã bài toán lớn thành một hoặc nhiều bài toán con có cùng dạng sẽ được thực hiện liên tục cho đến khi gặp bài toán con đơn giản đến mức có thể dễ dàng suy ra ngay được kết quả mà không cần phân rã nữa. Sau khi đã có được kết quả của bài toán con đơn giản nhất, dựa vào kết quả đó ta quay lại tìm kết quả của các bài toán con đã được phân rã trước đó và tìm được kết quả của bài toán ban đầu. Việc phân rã như vậy còn được gọi là **chia để trị**.
+
 - Ví dụ: Xét bài toán tính tổng các số từ 1 đến n, ta có 2 cách tiếp cận cơ bản nhất như sau: Gọi hàm **f(n)** là hàm tính tổng các số từ 1 đến n.
-	 - Cách tiếp cận 1: 
+
+	 - Cách tiếp cận 1:
+	 
 		 - Cộng lần lượt các số từ 1 đến n:  **f(n)** = 1 + 2 + 3 + ... + n.
-	 Khi đó hàm **f(n)** có thể được mô tả như sau:
+		 
 	- Cách tiếp cận 2:
+	
 		- Đệ quy: 
 			- **f(n) = 1** nếu n = 1.
 			- **f(n) = n + f(n - 1)** nếu n > 1.
@@ -49,8 +54,11 @@ int f(int n)
 ## 2. Giải thuật đệ quy:
 
 - Nếu lời giải của bài toán P được thực hiện bằng lời giải của bài toán P' có dạng giống như bài toán P thì đó là một lời giải đệ quy.
+
 - Giải thuật tương ứng với lời giải như vậy được gọi là giải thuật đệ quy. Cần chú ý: P' tuy có dạng giống như P nhưng phải dễ giải hơn P và việc giải P' không cần đến P.
+
 - Ý tưởng: Biểu diễn bài toán P dưới dạng một hoặc nhiều bài toán P' nhỏ hơn và thêm 1 hoặc vài điều kiện cơ sở để dừng đệ quy.
+
 - Cấu trúc của 1 hàm đệ quy gồm 2 phần:
 	- Bài toán cơ sở: Là bài toán đơn giản nhất, có thể dễ dàng suy ra được kết quả mà không cần giải thông qua bất kỳ bài toán con đơn giản nào khác.
 	- Phần đệ quy: Nếu bài toán hiện tại chưa thể giải được bằng bài toán cơ sở, ta hãy xác định bài toán con của nó và gọi đệ quy để giải bài toán con đó cho đến khi gặp bài toán cơ sở. Từ kết quả của bài toán cơ sở, ta quay lại giải các bài toán con lớn hơn và suy ra được kết quả của bài toán ban đầu.
