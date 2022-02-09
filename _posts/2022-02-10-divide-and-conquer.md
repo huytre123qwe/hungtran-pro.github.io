@@ -64,7 +64,7 @@ Bài toán: Tìm <img src="https://render.githubusercontent.com/render/math?math
     
 - Bước trị: Tính toán <img src="https://render.githubusercontent.com/render/math?math=x^\frac{n}{2}"> trong trường hợp x chẵn, <img src="https://render.githubusercontent.com/render/math?math=x.x^\frac{n}{2}"> trong trường hợp x lẻ.
  
-- Bước tổng hợp. Kết quả chính là <img src="https://render.githubusercontent.com/render/math?math=x^\frac{n}{2}.x^\frac{n}{2}"> nếu n chẵn trong <img src="https://render.githubusercontent.com/render/math?math=x.x^\frac{n}{2}.x^\frac{n}{2}"> trường hợp x lẻ. 
+- Bước tổng hợp: Kết quả chính là <img src="https://render.githubusercontent.com/render/math?math=x^\frac{n}{2}.x^\frac{n}{2}"> nếu n chẵn trong <img src="https://render.githubusercontent.com/render/math?math=x.x^\frac{n}{2}.x^\frac{n}{2}"> trường hợp x lẻ. 
 
 - Code:
 
