@@ -18,6 +18,7 @@
 	
 		- Đệ quy: 
 			- **f(n) = 1** nếu n = 1.
+			
 			- **f(n) = n + f(n - 1)** nếu n > 1.
 			
 			Giả sử n = 4:
@@ -31,6 +32,7 @@
 			Dễ thấy **f(1) = 1** do đó ta quay tại tính **f(2)**, từ **f(2)** ta tính được **f(3)** rồi tính được **f(4)**.
       
 	- Code:
+	
  ```C++
  // Cách tiếp cận 1:
 int f(int n)
@@ -49,8 +51,11 @@ int f(int n)
 ```
 
 - Ưu điểm và nhược điểm của đệ quy:
+
 	- Ưu điểm: Dễ xây dựng, code đơn giản, dễ hiểu.
+	
 	- Nhược điểm: Tốn bộ nhớ, chậm, độ sâu đệ quy hữu hạn.
+	
 ## 2. Giải thuật đệ quy:
 
 - Nếu lời giải của bài toán P được thực hiện bằng lời giải của bài toán P' có dạng giống như bài toán P thì đó là một lời giải đệ quy.
@@ -60,9 +65,13 @@ int f(int n)
 - Ý tưởng: Biểu diễn bài toán P dưới dạng một hoặc nhiều bài toán P' nhỏ hơn và thêm 1 hoặc vài điều kiện cơ sở để dừng đệ quy.
 
 - Cấu trúc của 1 hàm đệ quy gồm 2 phần:
+
 	- Bài toán cơ sở: Là bài toán đơn giản nhất, có thể dễ dàng suy ra được kết quả mà không cần giải thông qua bất kỳ bài toán con đơn giản nào khác.
+	
 	- Phần đệ quy: Nếu bài toán hiện tại chưa thể giải được bằng bài toán cơ sở, ta hãy xác định bài toán con của nó và gọi đệ quy để giải bài toán con đó cho đến khi gặp bài toán cơ sở. Từ kết quả của bài toán cơ sở, ta quay lại giải các bài toán con lớn hơn và suy ra được kết quả của bài toán ban đầu.
+	
 - Code: Xét hàm đệ quy của bài toán trong ví dụ của phần 1:
+
 ```C++
 int f(int n)
 {
@@ -72,8 +81,11 @@ int f(int n)
 ```
 
 ## 3. Đệ quy đuôi: 
+
 - Một hàm đệ quy được gọi là hàm đệ quy đuôi nếu như lời gọi đệ quy là điều cuối cùng được thực thi bởi hàm.
+
 - Ví dụ: Hàm tìm ước chung lớn nhất của 2 số nguyên dương a và b theo giải thuật Euclid sau đây là 1 hàm đệ quy đuôi:
+
 ```C++
 int gcd(int a, int b)
 {
@@ -81,5 +93,6 @@ int gcd(int a, int b)
 	return gcd(b, a % b);
 }
 ```
+
 - Ưu điểm của đệ quy đuôi: Nhanh hơn và ít tốn bộ nhớ hơn so với đệ quy thông thường.
 	
