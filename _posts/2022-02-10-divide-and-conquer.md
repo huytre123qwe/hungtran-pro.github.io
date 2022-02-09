@@ -4,7 +4,7 @@
 
 ## 1.Khái niệm:
 
-- Như tên gọi của thuật toán, để giải quyết một bài toán theo chiến lược như sau:
+- Như tên gọi của thuật toán, để giải quyết một bài toán ta thực hiện theo chiến lược như sau:
 
     - Chia nhỏ bài toán thành 2 hoặc nhiều bài toán con (Chia).
 
@@ -21,7 +21,7 @@ Bài toán: Cho một mảng A gồm n phần tử A[1, 2, ...,n] đã được 
 
 ![Ảnh mô tả tìm kiếm nhị phân](/image/1_VwnVSmKLev2MMfcdBcWH1g.png)    
 
-Với các bài toán tìm kiếm thông thường để tìm kiếm một phần tử trong danh sách đã được sắp xếp, chúng ta cần duyệt toàn bộ danh sách để tìm được vị trí tương ứng với độ phực tạp O(n).Tuy nhiên lợi dụng tính chất danh sách này đã được sắp xếp, ta có thể sử dụng Tìm kiếm nhị phân với Ο(log n) bằng cách sau:
+Với các bài toán tìm kiếm thông thường để tìm kiếm một phần tử trong danh sách đã được sắp xếp, chúng ta cần duyệt toàn bộ danh sách để tìm được vị trí tương ứng với độ phức tạp O(n).Tuy nhiên lợi dụng tính chất danh sách này đã được sắp xếp, ta có thể sử dụng Tìm kiếm nhị phân với Ο(log n) bằng cách sau:
 
 - Bước 1(Chia): Danh sách ban đầu sẽ được chia thành 2 nửa.
 
